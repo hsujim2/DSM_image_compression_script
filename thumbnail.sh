@@ -10,7 +10,7 @@ S=80 #resize (%)
 cd $IN_PATH
 for folder in *; do
         FILE_MISMATCH=$(ls -1 $folder/*.jpg| wc -l) #Default value
-        [ ! -d $OUT_PATH$folder ] && echo New Folder: $f!! Converting $FILE_MISMATCH images... && mkdir $OUT_PATH$f
+        [ ! -d $OUT_PATH$folder ] && echo New Folder: $f!! Converting $FILE_MISMATCH images... && mkdir $OUT_PATH$folder
         if [ -d $OUT_PATH$folder ]; then
                 echo $folder exist!! Detecting Images...
                 FILE_MISMATCH=0
